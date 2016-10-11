@@ -1,0 +1,214 @@
+%!TEX program = xelatex
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{geometry}
+\geometry{a4paper,total={210mm,297mm},left=20mm,right=20mm,top=20mm,bottom=20mm,}
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.4cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Supun Nakandala}
+		\bigskip
+\par}
+
+
+\begin{minipage}{0.58\linewidth}
+  Research Software Developer\\
+  Science Gateways Research Center\\
+  Pervasive Technologies Institute\\
+  Indiana University\\
+  USA\\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (+1) 812-558-688 \\
+    Email: & \href{mailto:supun.nakandala@gmail.com}{\tt supun.nakandala@gmail.com} \\
+    Github: & \href{http://github.com/scnakandala}{\tt github.com/scnakandala}\\
+    LinkedIn: & \href{http://lk.linkedin.com/in/scnakandala}{\tt lk.linkedin.com/in/scnakandala}\\
+    Blog: & \href{http://scnakandala.blogspot.com}{\tt scnakandala.blogspot.com}\\
+  \end{tabular}
+\end{minipage}
+%--------------------SECTIONS-----------------------------------
+%Section: Profile
+%\section{Objective}
+%My objective is to pursue a challenging and rewarding career in the field of %Information Technology in an energetic working environment where I can broaden my %nowledge and skills while achieving the goals of the company.
+
+%Section: Education
+\section{Education}
+\begin{tabular}{p{3cm}|p{13.5cm}}
+
+\emph{June 2010 - April 2015} & BSc.Eng(Hon's) (\textsc{Computer Science \& Engineering}) University of Moratuwa - Sri Lanka\\
+&\normalsize Cumulative GPA: 4.11/4.20\\
+&\normalsize Ranked first in a batch of 100 students specializing Computer Science \& Engineering.\\&\\
+
+\end{tabular}
+
+\section{Publications}
+
+\begin{tabular}{p{3cm}|p{13.5cm}}
+
+& \textbf{Nakandala, S.}, Ahn, Y., Giovanni, C., Norman, S., Analyzing Gender Disparity of Game Streaming on Twitch. [Submitted to 26'th International World Wide Web Conference 2017]\\\\
+
+\emph{November} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Marru, S. and Pierce, M., 2016, November. Better Data Discoverability in Science Gateways. 11'th Gateway Computing Environments Conference. [Extended Abstract] (pdf: \url{https://goo.gl/YdZmZ6})\\\\
+
+\emph{October} 2016 & \textbf{Nakandala, S.}, Gunasinghe, H., Marru, S., Pierce, M., 2016, October. Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework. In eScience, 2016. eScience'2016. IEEE 12'th International Conference on. IEEE. (pdf: \url{https://goo.gl/5lTtm2})\\\\
+
+\emph{July} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Yodage, S., Doshi, N., Abeysinghe, E., Kankanamalage, C.P., Marru, S. and Pierce, M., 2016, July. Anatomy of the SEAGrid Science Gateway. In Proceedings of the XSEDE16 Conference on Diversity, Big Data, and Science at Scale (p. 40). ACM. (pdf: \url{https://goo.gl/oytirb})\\\\
+
+\emph{June} 2016 & Pamidighantam, S., \textbf{Nakandala, S.}, Abeysinghe, E., Wimalasena, C., Rathnayaka, S., Marru, S. and Pierce, M., 2016. Community Science Exemplars in SEAGrid Science Gateway: Apache Airavata Based Implementation of Advanced Infrastructure. Workshop on Computational Chemistry and Its Applications - The International Conference on Computational Science 2016. (pdf: \url{https://goo.gl/btjjAK})\\\\
+
+\emph{April} 2015 & \textbf{Nakandala, S.}, Withana, S.D., Kumarasiri, D., Jayawardena, H., Bandara, H.D., Perera, S., Marru, S. and Pamidighantam, S., 2015, April. Schema-independent scientific data cataloging framework. In Moratuwa Engineering Research Conference (MERCon), 2015 (pp. 289-294). IEEE. (pdf: \url{https://goo.gl/tQlsVc})\\\\
+
+\emph{Dec} 2014 & \textbf{Nakandala}, S., Withana, S., Kumarasiri, D. and Jayawardena, H., A Study on SSD Aware Scan Operation Optmization in PostgreSQL Database. Proceedings of The ITRU Symposium 2014 , (pp. 16 - 19), University of Moratuwa Sri Lanka. (pdf: \url{https://goo.gl/PIzYuU})\\
+
+\end{tabular}
+
+
+%Section: Teaching Experience
+\section{Teaching Experience}
+\begin{tabular}{p{3cm}|p{13.5cm}}
+
+\emph{May 2015 - Aug 2015} & Teaching Assistant of Operating Systems Course (CS 2042), CSE-UoM.\\
+&\footnotesize{The goal of this course is to give fundamental knowledge in Operating Systems to computer science students. My tasks included providing instructions for the labs and grading assignments.}\\
+
+\end{tabular}\\
+
+
+%Section: Internships
+\section{Work \& Internships}
+\begin{tabular}{p{3cm}|p{13.5cm}}
+
+\emph{Oct 2015 - present}& Research Software Developer - Science Gateways Group, Indiana University\\
+&\footnotesize{Core developer in the Apache Airavata project which is a science gateway middleware framework that enables users to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.}\\\\
+
+\emph{May 2014 - Sep 2014}& Google Summer of Code Intern for Apache Airavata\\
+&\footnotesize{Airavata is an open source framework for developing science gateways. There was a huge need for Airavata based science gateways to have secure communication with the Airavata server. In this project I implemented security capabilities to Airavata thrift services and clients.}\\\\
+
+% \emph{Nov 2013 - May 2014} & Trainee Software Engineer - 99XTechnology (Pvt) Ltd.\\&\footnotesize{Worked on implementing an automated UI test suit for an enterprise grade accounting application named “Adrmatch Balancer”. This was done using an automated UI testing framework called SeShell. The test suit covered all the smoke tests. Also worked on an enterprise grade office administration handling application named “Tempus” which has both a desktop client and a web client. My contributions included fixing bugs related to compatibility issues of the web client among various web browsers.}\\\\
+
+
+\emph{May 2013 - Sep 2013} & Google Summer of Code Intern for phpMyAdmin 
+\\&\footnotesize{Refactored the SQL executor and column structure manipulation code in phpMyAdmin, which is an opensource web based interface for the MySQL databases.}
+\end{tabular}\\\\
+
+
+% %Section: Projects
+% \section{Selected Undergraduate Projects}
+% \begin{tabular}{p{3cm}|p{13.5cm}}
+
+% \emph{May 2014 - April 2015} & Scientific Data Cataloging Framework \href{http://goo.gl/2U1xjw}{\tt http://goo.gl/2U1xjw}\\&Final year research \& development project\\
+% &\footnotesize{The goal of this project is to implement a generic framework for scientific data management in science gateways. This project is integrated to the Apache Airavata project. As the driving usecase for the project we use a computational chemistry data set.}\\ & \footnotesize{Technologies: Java, Solr, Web Services, PHP, HTML, CSS, JavaScript}\\\\
+
+% \emph{May 2014 - Oct 2014} & KDD Cup 2014 (Via Kaggle) \href{http://goo.gl/7GaXDW}{\tt http://goo.gl/7GaXDW}\\& Course: Data Mining \& Information Retrieval\\
+% &\footnotesize{The objective of this project was to help DonorsChoose.org identify projects that are exceptionally exciting to the business, at the time of posting. We used machine learning techniques such as regression, decision trees, and ensemble methods to predict projects that will be exciting. This was done as Kaggle Competition and our team was able to obtain the 61 place out of 472 teams all over the world.}\\ & \footnotesize{Technologies: Python, NumPy, SimPy}\\\\
+
+% \end{tabular}
+
+
+%Section: Scholarships and additional info
+\section{Honors, Awards \& Scholarships}
+\begin{tabular}{p{3cm}|p{13.5cm}}
+\emph{Aug 2015} & IBM Gold Medal for the Best Academic Performance in Computer Science \& Engineering - University of Moratuwa.\\\\
+\emph{May 2014} & Scholarship to attend 4th South Asia Workshop 2014 on Research Frontiers in Computing - NUS School of Computing\\\\
+\emph{Aug 2010 - Apr 2015} & Mahapola Higher Education Merit Scholarship for Undergraduate Studies - Government of Sri Lanka.\\\\
+\emph{Nov 2009} & Award for the Most Outstanding Student - De Mazenod College.\\\\
+\emph{Mar 2009} & President’s Scout (Eagle Scout Equivalent) - Sri Lanka Scout Association.\\
+\end{tabular}\\
+
+%Section: Leadership and Extra Curricular Activities
+\section{Leadership \& Extra Curricular Activities}
+\begin{tabular}{p{3cm}|p{13.5cm}}
+\emph{2014} & Membership Co-Chair, ACM Student Chapter - University of Moratuwa.\\\\
+
+\emph{2011} & Editor, Sri Lanka University Catholic Students Movement.\\\\
+\emph{2008} & Head Prefect, De Mazenod College.\\\\
+\end{tabular}\\
+
+% %References
+% \section{References}
+% \begin{minipage}{0.58\linewidth}
+%   %\textbf{Dr. Dilum Bandara}\\
+%   %Senior Lecturer\\
+%   %Dept. of Computer Science \& Engineering\\
+%   %Faculty of Engineering\\
+%   %University of Moratuwa\\
+%   %Sri Lanka\\
+%   %\href{mailto:dilumb@cse.mrt.ac.lk}{\tt dilumb@cse.mrt.ac.lk}
+%   \textbf{Dr. Marlon Pierce}\\
+%   Manager\\
+%   Science Gateways Group\\
+%   Research Technologies\\
+%   Indiana University\\
+%   USA\\
+%   \href{mailto:mpierce@iu.edu}{\tt mpierce@iu.edu}
+% \end{minipage}
+% \begin{minipage}{0.58\linewidth}
+%   \textbf{Dr. Dilum Bandara}\\
+%   Senior Lecturer\\
+%   Dept. of Computer Science \& Engineering\\
+%   Faculty of Engineering\\
+%   University of Moratuwa\\
+%   Sri Lanka\\
+%   \href{mailto:dilumb@cse.mrt.ac.lk}{\tt dilumb@cse.mrt.ac.lk}
+%   %\textbf{Dr. Chathura De Silva}\\
+%   %Head of the Department\\
+%   %Department of Computer Science \& Engineering\\
+%   %University of Moratuwa\\
+%   %Moratuwa\\
+%   %Sri Lanka\\
+%   %\href{mailto:chathura@cse.mrt.ac.lk}{\tt chathura@cse.mrt.ac.lk}
+% \end{minipage}
+% %\begin{minipage}{0.58\linewidth}
+% %  \textbf{Suresh Marru}\\
+% %  Principal Software Architect\\
+% % Science Gateways Group\\
+% %  Indiana University\\
+% %  Bloomington\\
+% %  USA\\
+% %  \href{mailto:smarru@iu.edu}{\tt smarru@iu.edu}
+% %\end{minipage}
+
+\end{document}
