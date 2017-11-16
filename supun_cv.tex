@@ -12,6 +12,7 @@
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 \usepackage{geometry}
+\usepackage{longtable}
 \geometry{a4paper,total={210mm,297mm},left=20mm,right=20mm,top=20mm,bottom=20mm,}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -56,10 +57,10 @@ ItalicFont = Fontin-Italic.otf
 
 
 \begin{minipage}{0.58\linewidth}
-  Research Software Developer\\
-  \href{https://sgrc.iu.edu/}{Science Gateways Research Center}\\
-  Pervasive Technologies Institute\\
-  Indiana University\\
+  Ph.D Student\\
+  \href{https://adalabucsd.github.io/}{Advanced Data Analytics Lab}\\
+  \href{https://cse.ucsd.edu/}{Dept. of Computer Science \& Engineering}\\
+  University of California San Diego\\
   USA
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
@@ -72,37 +73,40 @@ ItalicFont = Fontin-Italic.otf
 \end{minipage}
 %--------------------SECTIONS-----------------------------------
 %Section: Profile
-%\section{Objective}
-%My objective is to pursue a challenging and rewarding career in the field of %Information Technology in an energetic working environment where I can broaden my %nowledge and skills while achieving the goals of the company.
+\section{Research Interests}
+My research interests are in the area of Advanced Data Analytics which is at the intersection of Machine Learning, Scalable Data Processing Systems and Human Computer Interaction. My current projects involve implementing Deep Learning powered Data Management Systems/Abstractions which can handle analytical queries on dark data types (e.g. images, videos, time series data) along with structured data in a scalable fashion.
 
 %Section: Education
 \section{Education}
 \begin{tabular}{p{3cm}p{13.5cm}}
 
+\emph{Sep 2017 - Present} & Ph.D Student(\textsc{Computer Science \& Engineering}) \href{https://ucsd.edu/}{University of California San Diego}\\
+&\normalsize Member of the \href{https://adalabucsd.github.io/}{Advanced Data Analytics Lab} \& advised by Prof. \href{https://cseweb.ucsd.edu/~arunkk}{Arun Kumar}
+\\\\
 \emph{Jun 2010 - Apr 2015} & BSc.Eng(Hon's) (\textsc{Computer Science \& Engineering}) \href{https://goo.gl/UYmcM7}{University of Moratuwa} - Sri Lanka\\
 &\normalsize Cumulative GPA: 4.11/4.20\\
 &\normalsize Ranked first in a batch of 100 students specializing Computer Science \& Engineering.
-
 \end{tabular}
 
-\section{Publications}
+\section{Selected Publications}
 
-\begin{tabular}{p{3cm}p{13.5cm}}
-
+\begin{longtable}{p{3cm}p{13.5cm}}
+ & \textbf{Nakandala, S.}, Kumar, A., ``Feature Materialization Trade-offs for Scalable Transfer Learning with Deep ConvNets''. [Under Preparation]
+\\\\
 \emph{May} 2017 & \textbf{Nakandala, S.}, Giovanni, C., Norman, S., Ahn, Y., ``Gendered Conversation in a Social Game-Streaming Platform''. [The 11th International AAAI Conference On Web And Social Media (ICWSM-17)] (pdf: \url{https://goo.gl/FaOlXW}, presentation: \url{https://goo.gl/68eZoS})
 \\\\
-\emph{Nov} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Marru, S. and Pierce, M. ``Better Data Discoverability in Science Gateways''. In Proceedings of \textit{11'th Gateway Computing Environments Conference 2016 (GCE)}. [Extended Abstract] (pdf: \url{https://goo.gl/YdZmZ6})
-\\\\
+% \emph{Nov} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Marru, S. and Pierce, M. ``Better Data Discoverability in Science Gateways''. In Proceedings of \textit{11'th Gateway Computing Environments Conference 2016 (GCE)}. [Extended Abstract] (pdf: \url{https://goo.gl/YdZmZ6})
+% \\\\
 \emph{Oct} 2016 & \textbf{Nakandala, S.}, Gunasinghe, H., Marru, S., Pierce, M. ``Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework''. In Proceedings of \textit{IEEE 12'th International Conference on eScience 2016}. (pdf: \url{https://goo.gl/5lTtm2})
 \\\\
 \emph{Jul} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Yodage, S., Doshi, N., Abeysinghe, E., Kankanamalage, C.P., Marru, S. and Pierce, M. ``Anatomy of the SEAGrid Science Gateway''. In Proceedings of \textit{Extreme Science \& Engineering Discovery Environments Conference on Diversity, Big Data, and Science at Scale 2016 (XSEDE) (p. 40). ACM}. (pdf: \url{https://goo.gl/oytirb})
-\\\\
-\emph{Jun} 2016 & Pamidighantam, S., \textbf{Nakandala, S.}, Abeysinghe, E., Wimalasena, C., Rathnayaka, S., Marru, S. and Pierce, M. ``Community Science Exemplars in SEAGrid Science Gateway: Apache Airavata Based Implementation of Advanced Infrastructure''. In Proceedings of \textit{Workshop on Computational Chemistry and Its Applications - International Conference on Computational Science 2016 (ICCS)}. (pdf: \url{https://goo.gl/btjjAK})
-\\\\
-\emph{Apr} 2015 & \textbf{Nakandala, S.}, Withana, S.D., Kumarasiri, D., Jayawardena, H., Bandara, H.D., Perera, S., Marru, S. and Pamidighantam, S. ``Schema-independent scientific data cataloging framework''. In Proceedings of \textit{Moratuwa Engineering Research Conference (MerCon) 2015 (pp. 289-294). IEEE}. (pdf: \url{https://goo.gl/tQlsVc})
-\\\\
-\emph{Dec} 2014 & \textbf{Nakandala}, S., Withana, S., Kumarasiri, D. and Jayawardena, H., ``A Study on SSD Aware Scan Operation Optmization in PostgreSQL Database''. In Proceedings of \textit{Information Technology Research Unit (ITRU) Symposium 2014 , (pp. 16 - 19), University of Moratuwa Sri Lanka}. (pdf: \url{https://goo.gl/PIzYuU})
-\end{tabular}
+% \\\\
+% \emph{Jun} 2016 & Pamidighantam, S., \textbf{Nakandala, S.}, Abeysinghe, E., Wimalasena, C., Rathnayaka, S., Marru, S. and Pierce, M. ``Community Science Exemplars in SEAGrid Science Gateway: Apache Airavata Based Implementation of Advanced Infrastructure''. In Proceedings of \textit{Workshop on Computational Chemistry and Its Applications - International Conference on Computational Science 2016 (ICCS)}. (pdf: \url{https://goo.gl/btjjAK})
+% \\\\
+% \emph{Apr} 2015 & \textbf{Nakandala, S.}, Withana, S.D., Kumarasiri, D., Jayawardena, H., Bandara, H.D., Perera, S., Marru, S. and Pamidighantam, S. ``Schema-independent scientific data cataloging framework''. In Proceedings of \textit{Moratuwa Engineering Research Conference (MerCon) 2015 (pp. 289-294). IEEE}. (pdf: \url{https://goo.gl/tQlsVc})
+% \\\\
+% \emph{Dec} 2014 & \textbf{Nakandala}, S., Withana, S., Kumarasiri, D. and Jayawardena, H., ``A Study on SSD Aware Scan Operation Optmization in PostgreSQL Database''. In Proceedings of \textit{Information Technology Research Unit (ITRU) Symposium 2014 , (pp. 16 - 19), University of Moratuwa Sri Lanka}. (pdf: \url{https://goo.gl/PIzYuU})
+\end{longtable}
 
 
 %Section: Teaching Experience
@@ -118,7 +122,7 @@ ItalicFont = Fontin-Italic.otf
 \section{Work Experience}
 \begin{tabular}{p{3cm}p{13.5cm}}
 
-\emph{Oct 2015 - present}& Research Software Developer - \href{https://sgrc.iu.edu}{Science Gateways Research Center}, Indiana University\\
+\emph{Oct 2015 - Aug 2017}& Research Software Developer - \href{https://sgrc.iu.edu}{Science Gateways Research Center}, Indiana University\\
 &\footnotesize{Program committee member and core developer in the \href{https://goo.gl/s9Gm3k}{Apache Airavata} project which is a science gateway middleware framework that enables users to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.}\\\\
 
 \emph{May 2014 - Sep 2014}& Google Summer of Code Intern for Apache Airavata\\
