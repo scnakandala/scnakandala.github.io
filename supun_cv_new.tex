@@ -1,0 +1,205 @@
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}  
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={black!80!black}
+}
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Supun Nakandala}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{Phone: (+1) 812-558-6888\\ Email: snakanda@eng.ucsd.edu\\ Web: \href{https://scnakandala.github.io}{scnakandala.github.io}}
+\address{3232 EBU3B CSE\\9500 Gilman Drive\\La Jolla, CA 92093}
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%-------------------------------------------------------------------------------
+\section{Research Interests}
+My research interest lies broadly in the intersection of ML and Systems, an emerging area which is increasingly referred to as ML Systems. My current research work involves implementing data management inspired abstractions, algorithms, and systems, for improving the efficiency and usability of Deep Learning powered ML workloads.
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{Education}
+\textbf{University of California}, San Diego, CA \hfill Sept 2017 - Present
+\\ 
+{\sl PhD}, Computer Science. GPA: 4.0/4.0 
+\\
+Thesis Advisor: Arun Kumar
+\vspace{2mm}
+\\
+\textbf{University of Moratuwa}, Sri Lanka \hfill Aug 2010 - April 2015
+\\
+{\sl Bachelor of the Science of Engineering}, Computer Science \& Engineering. \\ GPA: 4.11/4.20.
+%-------------------------------------------------------------------------------
+
+\section{Publications}
+\par
+\textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations} \\
+\textbf{Nakandala, S.}, Kumar, A., Papakonstantinou, Y. \\
+(Under Submission).
+
+\par
+\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \\
+\textbf{Nakandala, S.}, Kumar, A. \\
+(Under Submission).
+
+\par
+\textit{Gendered Conversation in a Social Game-Streaming Platform} \\
+\textbf{Nakandala, S.}, Giovanni, C., Norman, S., Ahn, Y. \\
+In Proceedings of $11^{th}$ International AAAI Conference On Web And Social Media (ICWSM) 2017.
+
+\par
+\textit{Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework
+} \\
+\textbf{Nakandala, S.}, Gunasinghe, H., Marru, S., Pierce, M. \\
+In Proceedings of IEEE $12^{th}$ International Conference on e-Science 2016.
+
+\par
+\textit{Anatomy of the SEAGrid Science Gateway} \\
+\textbf{Nakandala, S.}, Pamidighantam, S., Yodage, S., Doshi, N., Abeysinghe, E., Kankanamalage, C.P., Marru, S. and Pierce, M. \\
+In Proceedings of Extreme Science \& Engineering Discovery Environments Conference (XSEDE) on Diversity, Big Data, and Science at Scale 2016.
+
+
+%-------------------------------------------------------------------------------
+%	CURRENT PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{Current Projects}
+\par
+\textbf{Cerebro}: 
+The goal of this project is to make the end-to-end model selection process more efficient when developing ML models. To this end, we are developing a new system which takes inspirations from RDBMS, scalable distributed systems, and operations research literature.
+
+\par
+\textbf{Medical Data to Knowledge}: 
+In this project, which is done in collaboration with researchers from the UCSD Dept. of Public Health, I develop new ML models to predict the sitting patterns for a large cohort of human subjects belonging to different age groups using data from hip worn accelerometers. The predicted results will then be used to better understand the relationship between human sitting patterns and metabolic health.
+
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}  \dates{l}\\
+\employer{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+\renewcommand{\labelitemi}{{\tiny$\bullet$}}
+\section{Experience}
+\textbf{Research Software Developer}
+\hfill Oct 2015 - Aug 2017 \\
+\textit{Indiana University} \\
+\begin{itemize}[leftmargin=-.in]
+\vspace{-3mm}
+\item Worked as a developer for the Apache Airavata project, which is a science gateway middleware framework to enable users to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.\\
+Group Website: \url{https://sgrc.iu.edu}
+\end{itemize}
+
+\textbf{Google Summer of Code Intern}
+\hfill May 2014 - Sept 2014 \\
+\textit{Apache Airavata} \\
+\begin{itemize}[leftmargin=-.in]
+\vspace{-3mm}
+\item Implemented API security capabilities for the Airavata Thrift services for the communication between end-user gateways and the Airavata server. \\
+Link: \url{https://goo.gl/4qAS3X})
+\end{itemize}
+
+\textbf{Google Summer of Code Intern}
+\hfill May 2013 - Sept 2013 \\
+\textit{phpMyAdmin} \\
+\begin{itemize}[leftmargin=-.in]
+\vspace{-3mm}
+\item Refactored the SQL executor and column structure manipulation code in phpMyAdmin, which is an open-source web based interface for MySQL databases\\
+Link : \url{https://goo.gl/JNk3vM}
+\end{itemize}
+
+
+%-------------------------------------------------------------------------------
+%	Interests
+%-------------------------------------------------------------------------------
+\section{Awards}
+IBM Gold Medal for the Best Academic Performance in Computer Science \& Engineering - University of Moratuwa \hfill 2015
+\vspace{2mm}
+\\
+Scholarship to attend $4^{th}$ South Asia Workshop on Research Frontiers in Computing - NUS School of Computing \hfill 2014
+\vspace{2mm}
+\\
+Mahapola Higher Education Merit Scholarship for Undergraduate Studies - Government of Sri Lanka \hfill 2010
+\vspace{2mm}
+
+% %-------------------------------------------------------------------------------
+% \section{SERVICE}
+% \textit{External Reviewer:} VLDB Demo 2018
+% %-------------------------------------------------------------------------------
+\section{Posters}
+\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \\
+SysML Conference, SoCal DB Day \hfill 2018
+
+%-------------------------------------------------------------------------------
+\section{Talks}
+\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics}
+\\
+UCSD CNS Research Review, UCSD Database Seminar \hfill 2018
+%-------------------------------------------------------------------------------
+\section{References}
+Arun Kumar \\
+Assistant Professor, University of California, San Diego \\
+arunkk@eng.ucsd.edu
+
+Yong-Yeol Ahn \\
+Associate Professor, Indiana University Bloomington \\
+yyahn@iu.edu 
+
+Marlon Pierce \\
+Director - Science Gateways Research Center, Indiana University Bloomington \\
+marpierc@iu.edu
+\end{resume}
+\end{document}
