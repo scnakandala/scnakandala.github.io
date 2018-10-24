@@ -19,7 +19,7 @@ li.slide i b,li.slide em b,li.slide i strong,li.slide em strong,li.slide i a,li.
 li.slide b,li.slide strong{font-weight:bold}
 li.slide b i,li.slide strong i,li.slide b em,li.slide strong em,li.slide b a,li.slide strong a{font-weight:bold}
 nav ul,footer ul{list-style-type:none}
-html{font-size:14px;line-height:1}
+html{font-size:16px;line-height:1}
 
 
 @font-face {
