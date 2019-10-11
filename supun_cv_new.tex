@@ -1,26 +1,3 @@
-%-------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can have multiple style options the legal options ones are:
-%
-%   centered:	the name and address are centered at the top of the page 
-%				(default)
-%
-%   line:		the name is the left with a horizontal line then the address to
-%				the right
-%
-%   overlapped:	the section titles overlap the body text (default)
-%
-%   margin:		the section titles are to the left of the body text
-%		
-%   11pt:		use 11 point fonts instead of 10 point fonts
-%
-%   12pt:		use 12 point fonts instead of 10 point fonts
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[margin]{res}  
 
 % Default font is the helvetica postscript font
@@ -35,171 +12,177 @@
     citecolor={blue!50!black},
     urlcolor={black!80!black}
 }
-% Increase text height
 \textheight=700pt
 
 \begin{document}
 
-%-------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%-------------------------------------------------------------------------------
-\name{Supun Nakandala}
-
-% Note that addresses can be used for other contact information:
-% -phone numbers
-% -email addresses
-% -linked-in profile
+\name{\Huge{Supun Nakandala}}
 
 \address{Phone: (+1) 812-558-6888\\ Email: snakanda@eng.ucsd.edu\\ Web: \href{https://scnakandala.github.io}{scnakandala.github.io}}
 \address{3232 EBU3B CSE\\9500 Gilman Drive\\La Jolla, CA 92093}
 
-% Uncomment to add a third address
-%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
-%-------------------------------------------------------------------------------
 
 \begin{resume}
-
-%-------------------------------------------------------------------------------
-%	RESEARCH INTERESTS SECTION
-%-------------------------------------------------------------------------------
 \section{Research Interests}
-My research interest lies broadly in the intersection of ML and Systems, an emerging area which is increasingly referred to as ML Systems. My current research work involves implementing data management inspired abstractions, algorithms, and systems, for improving the efficiency and usability of Deep Learning powered ML workloads.
+My research interest lies broadly in the intersection of Systems and Machine Learning, an emerging area which is increasingly referred to as \textit{Systems for ML}. In this space I operate as a data management researcher.
+Taking inspirations from classical data management techniques, I build new abstractions, algorithms, and systems to improve efficiency, scalability, and usability of machine learning workloads.
 
-%-------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%-------------------------------------------------------------------------------
+
 \section{Education}
 \textbf{University of California}, San Diego, CA \hfill Sept 2017 - Present
 \\ 
-{\sl PhD}, Computer Science. GPA: 4.0/4.0 
+{\sl PhD}, Computer Science. GPA: 3.96/4.00 
 \\
-Thesis Advisor: Arun Kumar
-\vspace{2mm}
+Thesis Advisor: Prof. Arun Kumar\\
+Courses: Database System Implementation, Advanced Data Analytics Systems, Data Models in Big Data Era, Advanced Compiler Design, Machine Learning, Recommender Systems and Web Mining, Algorithm Design and Analysis
+\vspace{4mm}
 \\
 \textbf{University of Moratuwa}, Sri Lanka \hfill Aug 2010 - April 2015
 \\
 {\sl Bachelor of the Science of Engineering}, Computer Science \& Engineering. \\ GPA: 4.11/4.20.
-%-------------------------------------------------------------------------------
+\\ \textbf{Department Topper and Gold Medalist}
+
+
 
 \section{Publications}
+
 \par
 \textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations} \\
-\textbf{Nakandala, S.}, Kumar, A., Papakonstantinou, Y. \\
-(Under Submission).
+Supun Nakandala, Arun Kumar, and Yannis Papakonstantinou \\
+ACM SIGMOD 2019 (\textbf{Honorable Mention for Best Paper Award})
+
+\par
+\textit{Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems} \\
+Supun Nakandala, Yuhao Zhang, and Arun Kumar\\
+ACM SIGMOD 2019 DEEM Workshop
+
+\par
+\textit{Demonstration of Krypton: Optimized CNN Inference for Occlusion-based Deep CNN Explanations} \\
+Allen Ordookhanians, Xin Li, Supun Nakandala, and Arun Kumar\\
+VLDB 2019 Demo $|$ SysML 2019 Demo
 
 \par
 \textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \\
-\textbf{Nakandala, S.}, Kumar, A. \\
-(Under Submission).
+Supun Nakandala, Arun Kumar\\
+SysML 2018 Short paper
 
 \par
 \textit{Gendered Conversation in a Social Game-Streaming Platform} \\
-\textbf{Nakandala, S.}, Giovanni, C., Norman, S., Ahn, Y. \\
-In Proceedings of $11^{th}$ International AAAI Conference On Web And Social Media (ICWSM) 2017.
+Supun Nakandala, Giovani Cimpaglia, Norma Su, and Yong-Yeol Ahn \\
+AAAI ICWSM 2017
 
 \par
 \textit{Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework
 } \\
-\textbf{Nakandala, S.}, Gunasinghe, H., Marru, S., Pierce, M. \\
-In Proceedings of IEEE $12^{th}$ International Conference on e-Science 2016.
+Supun Nakandala, Hasini Gunasinghe, Suresh Marru, and Marlon Pierce\\
+IEEE e-Science 2016
 
 \par
 \textit{Anatomy of the SEAGrid Science Gateway} \\
-\textbf{Nakandala, S.}, Pamidighantam, S., Yodage, S., Doshi, N., Abeysinghe, E., Kankanamalage, C.P., Marru, S. and Pierce, M. \\
-In Proceedings of Extreme Science \& Engineering Discovery Environments Conference (XSEDE) on Diversity, Big Data, and Science at Scale 2016.
+Supun Nakandala, Sudhakar Pamidigantam, Suresh Marru, Marlon Pierce\\
+NSF XSEDE 2016
 
 
-%-------------------------------------------------------------------------------
-%	CURRENT PROJECTS SECTION
-%-------------------------------------------------------------------------------
-\section{Current Projects}
+\vspace{10mm}
+\section{Pre-Prints}
 \par
-\textbf{Cerebro}: 
-The goal of this project is to make the end-to-end model selection process more efficient when developing ML models. To this end, we are developing a new system which takes inspirations from RDBMS, scalable distributed systems, and operations research literature.
+\textit{Vista: Declarative Feature Transfer from Deep CNNs at Scale} \\
+Supun Nakandala, Arun Kumar\\
+\url{https://adalabucsd.github.io/papers/TR_2019_Vista.pdf}
 
 \par
-\textbf{Medical Data to Knowledge}: 
-In this project, which is done in collaboration with researchers from the UCSD Dept. of Public Health, I develop new ML models to predict the sitting patterns for a large cohort of human subjects belonging to different age groups using data from hip worn accelerometers. The predicted results will then be used to better understand the relationship between human sitting patterns and metabolic health.
+\textit{Resource-Efficient and Reproducible Model Selection on Deep Learning Systems} \\
+Supun Nakandala, Yuhao Zhang, and Arun Kumar\\
+\url{https://adalabucsd.github.io/papers/TR_2019_Cerebro.pdf}
 
 
-%-------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%-------------------------------------------------------------------------------
-% Modify the format of each position
-\begin{format}
-\title{l}  \dates{l}\\
-\employer{r}\\
-\body\\
-\end{format}
-%-------------------------------------------------------------------------------
-\renewcommand{\labelitemi}{{\tiny$\bullet$}}
-\section{Experience}
+\par
+Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving \\
+Supun Nakandala, Gyeong-In Yu, Matteo Interlandi, and Markus Weimer\\
+\url{https://adalabucsd.github.io/papers/TR_2019_Hummingbird.pdf}
+
+
+
+\vspace{2mm}
+\section{Ongoing Projects}
+\par
+
+\textbf{Project \textsc{Hummingbird}} \hfill Started June 2019\\
+In the past few years several optimized systems have been developed for accelerating deep learning prediction serving. However, in many domains, classical ML methods are still widely used. In this project we try to answer the following question: \textit{Can we represent classical ML pipelines using tensor computations to reuse deep net prediction serving systems for classical ML prediction serving?} To realize this goal, project \textsc{Hummingbird} takes inspiration from query processing/optimization techniques in RDBMS and compiles classical ML pipelines into tensor computations. Experiments on real-world use cases show that \textsc{Hummingbird} enables significant speedups (even up to 10X)  and seamless hardware acceleration for classical ML prediction serving compared to other existing systems.
+
+
+\textbf{Project \textsc{Cerebro}} \hfill Started September 2018\\
+Deep neural networks are revolutionizing many ML applications.
+But there is a major bottleneck to wider adoption: the pain of \textit{model selection}.
+This empirical process involves exploring the deep net architecture and hyper-parameters, often requiring hundreds of trials.
+Alas, most ML systems focus on training one model at a time, reducing throughput and raising costs; some also sacrifice reproducibility.
+We are developing {Cerebro}, which is a system to raise deep net model selection throughput at scale and ensure reproducibility.
+\textsc{Cerebro} uses a novel parallel execution strategy we call \textit{model hopper parallelism} which is inspired by the multi-query optimization technique.
+Experiments on \textit{Criteo} and \textit{ImageNet} datasets show \textsc{Cerebro} offers up to 10X speedups and improves resource efficiency significantly compared to existing systems like Parameter Server, Horovod, and task-parallel tools.
+
+
+\section{Research Impact}
+Ideas from project \textsc{Cerebro} integrated into MADlib/Greenplum by Pivotal\hfill 2019\\
+\textsc{Cerebro} system is being used by behavioral science researchers at UC San Diego medical school \hfill 2019\\
+\textit{``Gendered Conversation in a Social Game-Streaming Platform''} paper gains lot of media attention and creates awareness about the bleak issue of sexism in online game streaming platforms \hfill 2017\\
+\textsc{Apache Airavata} science gateways middleware and the \textsc{SEAGrid} science gateway are widely used by computational science researchers to execute and manage computational jobs on university clusters and national supercomputing infrastructure \hfill 2017
+
+\section{Work Experience}
+
+\textbf{Research Intern}
+\hfill June 2019 - Sept 2019 \\
+\textit{Microsoft Cloud Information Services Lab} \\
+Mentor: Matteo Interlandi, Markus Weimer\\
+Translating classical machine learning pipelines into tensor computations for unified and faster scoring of machine learning models.\\\\\\
+
+
 \textbf{Research Software Developer}
 \hfill Oct 2015 - Aug 2017 \\
-\textit{Indiana University} \\
-\begin{itemize}[leftmargin=-.in]
-\vspace{-3mm}
-\item Worked as a developer for the Apache Airavata project, which is a science gateway middleware framework to enable users to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.\\
-Group Website: \url{https://sgrc.iu.edu}
-\end{itemize}
-
-\textbf{Google Summer of Code Intern}
-\hfill May 2014 - Sept 2014 \\
-\textit{Apache Airavata} \\
-\begin{itemize}[leftmargin=-.in]
-\vspace{-3mm}
-\item Implemented API security capabilities for the Airavata Thrift services for the communication between end-user gateways and the Airavata server. \\
-Link: \url{https://goo.gl/4qAS3X})
-\end{itemize}
-
-\textbf{Google Summer of Code Intern}
-\hfill May 2013 - Sept 2013 \\
-\textit{phpMyAdmin} \\
-\begin{itemize}[leftmargin=-.in]
-\vspace{-3mm}
-\item Refactored the SQL executor and column structure manipulation code in phpMyAdmin, which is an open-source web based interface for MySQL databases\\
-Link : \url{https://goo.gl/JNk3vM}
-\end{itemize}
+\textit{Science Gateways Research Center - Indiana University} \\
+Manager: Marlon Pierce\\
+Developed \textsc{Apache Airavata}, which is a software framework to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.
 
 
-%-------------------------------------------------------------------------------
-%	Interests
-%-------------------------------------------------------------------------------
-\section{Awards}
-IBM Gold Medal for the Best Academic Performance in Computer Science \& Engineering - University of Moratuwa \hfill 2015
-\vspace{2mm}
+
+\section{Teaching Experience}
+Teaching Assistant - Advanced Data Analytics Systems \hfill UCSD - Spring 2019
+
+
+
+\section{Scholarships and Awards}
+NSF travel award to attend ACM SIGMOD 2019 \hfill NSF - 2019
 \\
-Scholarship to attend $4^{th}$ South Asia Workshop on Research Frontiers in Computing - NUS School of Computing \hfill 2014
-\vspace{2mm}
+Gold Medal for the Best Academic Performance \hfill University of Moratuwa - 2015
 \\
-Mahapola Higher Education Merit Scholarship for Undergraduate Studies - Government of Sri Lanka \hfill 2010
-\vspace{2mm}
+Travel award to attend $4^{th}$ South Asia Workshop on Research\\ Frontiers in Computing~\hfill National University of Singapore - 2014
+\\
+Mahapola Higher Education Merit Scholarship \hfill Govt. of Sri Lanka - 2010
 
-% %-------------------------------------------------------------------------------
-% \section{SERVICE}
-% \textit{External Reviewer:} VLDB Demo 2018
-% %-------------------------------------------------------------------------------
-\section{Posters}
-\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \\
-SysML Conference, SoCal DB Day \hfill 2018
+
+\section{Technical Talks}
+\textit{Resource-Efficient and Reproducible Model Selection on Deep Learning Systems} \hfill UCSD CNS Research Review 2019\\
+% \\
+\textit{Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving} \hfill Microsoft Cloud Information Services Lab 2019\\
+% \\
+\textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations} \hfill ACM SIGMOD 2019\\
+% \\
+\textit{Cerebro: A System for Efficient and Reproducible Model Selection on Deep Learning \\Systems} \hfill ACM SIGMOD 2019\\
+% \\
+\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \hfill UCSD CNS Research Review 2018\\
+% \\
 
 %-------------------------------------------------------------------------------
-\section{Talks}
-\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics}
-\\
-UCSD CNS Research Review, UCSD Database Seminar \hfill 2018
-%-------------------------------------------------------------------------------
-\section{References}
-Arun Kumar \\
-Assistant Professor, University of California, San Diego \\
-arunkk@eng.ucsd.edu
+% \section{References}
+% Arun Kumar \\
+% Assistant Professor, University of California, San Diego \\
+% arunkk@eng.ucsd.edu
 
-Yong-Yeol Ahn \\
-Associate Professor, Indiana University Bloomington \\
-yyahn@iu.edu 
+% Yong-Yeol Ahn \\
+% Associate Professor, Indiana University Bloomington \\
+% yyahn@iu.edu 
 
-Marlon Pierce \\
-Director - Science Gateways Research Center, Indiana University Bloomington \\
-marpierc@iu.edu
+% Marlon Pierce \\
+% Director - Science Gateways Research Center, Indiana University Bloomington \\
+% marpierc@iu.edu
 \end{resume}
 \end{document}
