@@ -23,9 +23,10 @@
 
 
 \begin{resume}
+\vspace{-2mm}
 \section{Research Interests}
 My research interest lies broadly in the intersection of Systems and Machine Learning, an emerging area which is increasingly referred to as \textit{Systems for ML}. In this space I operate as a data management researcher.
-Taking inspirations from classical data management techniques, I build new abstractions, algorithms, and systems to improve efficiency, scalability, and usability of machine learning workloads.
+Taking inspirations from classical data management techniques, I build new abstractions, algorithms, and systems to improve efficiency, scalability, and usability of machine learning workloads. I am also interested in large-scale applied ML, which opens new systems challenges.
 
 
 \section{Education}
@@ -49,7 +50,13 @@ Courses: Database System Implementation, Advanced Data Analytics Systems, Data M
 \par
 \textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations} \\
 Supun Nakandala, Arun Kumar, and Yannis Papakonstantinou \\
-ACM SIGMOD 2019 (\textbf{Honorable Mention for Best Paper Award})
+ACM SIGMOD 2019 \\
+\textbf{Honorable Mention for Best Paper Award. Invited to ACM TODS.}
+
+\par
+Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving \\
+Supun Nakandala, Gyeong-In Yu, Matteo Interlandi, and Markus Weimer\\
+NeurIPS 2019 MLSys Workshop
 
 \par
 \textit{Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems} \\
@@ -75,7 +82,7 @@ AAAI ICWSM 2017
 \textit{Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework
 } \\
 Supun Nakandala, Hasini Gunasinghe, Suresh Marru, and Marlon Pierce\\
-IEEE e-Science 2016
+IEEE e-Science 2016\\
 
 \par
 \textit{Anatomy of the SEAGrid Science Gateway} \\
@@ -83,57 +90,35 @@ Supun Nakandala, Sudhakar Pamidigantam, Suresh Marru, Marlon Pierce\\
 NSF XSEDE 2016
 
 
-\vspace{10mm}
+\vspace{2mm}
 \section{Pre-Prints}
 \par
-\textit{Vista: Declarative Feature Transfer from Deep CNNs at Scale} \\
-Supun Nakandala, Arun Kumar\\
-\url{https://adalabucsd.github.io/papers/TR_2019_Vista.pdf}
+\textit{Deep Learning Algorithms for Identifying Sedentary Behavior from Hip Worn Accelerometer Data} \\
+Supun Nakandala, Marta Jankowaska, Fatima Tuz-Zahra, John Bellettiere, Arun Kumar, and Loki Natarajan\\
+Under Submission
 
 \par
 \textit{Resource-Efficient and Reproducible Model Selection on Deep Learning Systems} \\
 Supun Nakandala, Yuhao Zhang, and Arun Kumar\\
+Under Review at SysML 2020\\
 \url{https://adalabucsd.github.io/papers/TR_2019_Cerebro.pdf}
 
-
 \par
-Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving \\
-Supun Nakandala, Gyeong-In Yu, Matteo Interlandi, and Markus Weimer\\
-\url{https://adalabucsd.github.io/papers/TR_2019_Hummingbird.pdf}
+\textit{Vista: Declarative Feature Transfer from Deep CNNs at Scale} \\
+Supun Nakandala, Arun Kumar\\
+Under Review at SIGMOD 2020\\
+\url{https://adalabucsd.github.io/papers/TR_2019_Vista.pdf}
 
 
 
-\vspace{2mm}
-\section{Ongoing Projects}
-\par
-
-\textbf{Project \textsc{Hummingbird}} \hfill Started June 2019\\
-In the past few years several optimized systems have been developed for accelerating deep learning prediction serving. However, in many domains, classical ML methods are still widely used. In this project we try to answer the following question: \textit{Can we represent classical ML pipelines using tensor computations to reuse deep net prediction serving systems for classical ML prediction serving?} To realize this goal, project \textsc{Hummingbird} takes inspiration from query processing/optimization techniques in RDBMS and compiles classical ML pipelines into tensor computations. Experiments on real-world use cases show that \textsc{Hummingbird} enables significant speedups (even up to 10X)  and seamless hardware acceleration for classical ML prediction serving compared to other existing systems.
-
-
-\textbf{Project \textsc{Cerebro}} \hfill Started September 2018\\
-Deep neural networks are revolutionizing many ML applications.
-But there is a major bottleneck to wider adoption: the pain of \textit{model selection}.
-This empirical process involves exploring the deep net architecture and hyper-parameters, often requiring hundreds of trials.
-Alas, most ML systems focus on training one model at a time, reducing throughput and raising costs; some also sacrifice reproducibility.
-We are developing {Cerebro}, which is a system to raise deep net model selection throughput at scale and ensure reproducibility.
-\textsc{Cerebro} uses a novel parallel execution strategy we call \textit{model hopper parallelism} which is inspired by the multi-query optimization technique.
-Experiments on \textit{Criteo} and \textit{ImageNet} datasets show \textsc{Cerebro} offers up to 10X speedups and improves resource efficiency significantly compared to existing systems like Parameter Server, Horovod, and task-parallel tools.
-
-
-\section{Research Impact}
-Ideas from project \textsc{Cerebro} integrated into MADlib/Greenplum by Pivotal\hfill 2019\\
-\textsc{Cerebro} system is being used by behavioral science researchers at UC San Diego medical school \hfill 2019\\
-\textit{``Gendered Conversation in a Social Game-Streaming Platform''} paper gains lot of media attention and creates awareness about the bleak issue of sexism in online game streaming platforms \hfill 2017\\
-\textsc{Apache Airavata} science gateways middleware and the \textsc{SEAGrid} science gateway are widely used by computational science researchers to execute and manage computational jobs on university clusters and national supercomputing infrastructure \hfill 2017
 
 \section{Work Experience}
 
-\textbf{Research Intern}
+\textbf{Research Intern - Systems for ML}
 \hfill June 2019 - Sept 2019 \\
 \textit{Microsoft Cloud Information Services Lab} \\
-Mentor: Matteo Interlandi, Markus Weimer\\
-Translating classical machine learning pipelines into tensor computations for unified and faster scoring of machine learning models.\\\\\\
+Mentors: Matteo Interlandi, Markus Weimer\\
+Designed and implemented a compiler for translating classical machine learning pipelines into tensor computations for unified and faster scoring of machine learning models. The initial workshop paper has been accepted to the Neurips 2019 MLSys Workshop. Full conference publication is in progress.
 
 
 \textbf{Research Software Developer}
@@ -148,7 +133,6 @@ Developed \textsc{Apache Airavata}, which is a software framework to compose, ma
 Teaching Assistant - Advanced Data Analytics Systems \hfill UCSD - Spring 2019
 
 
-
 \section{Scholarships and Awards}
 NSF travel award to attend ACM SIGMOD 2019 \hfill NSF - 2019
 \\
@@ -159,8 +143,33 @@ Travel award to attend $4^{th}$ South Asia Workshop on Research\\ Frontiers in C
 Mahapola Higher Education Merit Scholarship \hfill Govt. of Sri Lanka - 2010
 
 
+\section{Research Impact}
+Ideas from project \textsc{Cerebro} integrated into MADlib/Greenplum by Pivotal\hfill 2019\\
+\textsc{Cerebro} system is being used by behavioral science researchers at UC San Diego medical school \hfill 2019\\
+\textit{``Gendered Conversation in a Social Game-Streaming Platform''} paper gains lot of media attention and creates awareness about the bleak issue of sexism in online game streaming platforms \hfill 2017\\
+\textsc{Apache Airavata} science gateways middleware and the \textsc{SEAGrid} science gateway are widely used by computational science researchers to execute and manage computational jobs on university clusters and national supercomputing infrastructure \hfill 2017
+
+
+\vspace{2mm}
+\section{Ongoing Projects}
+\par
+
+\textbf{Project: \textsc{Medical Data to Knowledge}} \hfill Started September 2018\\
+In this joint project between UCSD CS department and UCSD Medical School, I develop new deep learning-based techniques for predicting human activity (e.g., sitting, standing, and stepping) from accelerometer data. The data is collected from a large cohort of patients who wore accelerometer devices for seven days of free living. The goal is to develop accurate methods to predict human activity from these accelerometer data and then use them in downstream human activity and metabolic health correlation analysis. The challenges of this project include working with large volumes of training data (1 TB) and performing extensive \textit{model selection} such as neural architecture search and hyperparameter tuning.
+
+
+\textbf{Project: \textsc{Cerebro}} \hfill Started September 2018\\
+Deep neural networks are revolutionizing many ML applications.
+But there is a major bottleneck to wider adoption: the pain of \textit{model selection}.
+This empirical process involves exploring the deep net architecture and hyper-parameters, often requiring hundreds of trials.
+Alas, most ML systems focus on training one model at a time, reducing throughput and raising costs; some also sacrifice reproducibility.
+We are developing {Cerebro}, which is a system to raise deep net model selection throughput at scale and ensure reproducibility.
+\textsc{Cerebro} uses a novel parallel execution strategy we call \textit{model hopper parallelism} which is inspired by the multi-query optimization technique.
+Experiments on \textit{Criteo} and \textit{ImageNet} datasets show \textsc{Cerebro} offers up to 10X speedups and improves resource efficiency significantly compared to existing systems like Parameter Server, Horovod, and task-parallel tools.
+
+
 \section{Technical Talks}
-\textit{Resource-Efficient and Reproducible Model Selection on Deep Learning Systems} \hfill UCSD CNS Research Review 2019\\
+\textit{Resource-Efficient and Reproducible Model Selection on Popular Deep Learning\\ Systems} \hfill UCSD CNS Research Review 2019\\
 % \\
 \textit{Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving} \hfill Microsoft Cloud Information Services Lab 2019\\
 % \\
