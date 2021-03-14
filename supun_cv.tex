@@ -1,214 +1,246 @@
-%!TEX program = xelatex
-\documentclass[a4paper,10pt]{article}
+\documentclass[margin]{res}  
 
-%A Few Useful Packages
-\usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-\RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
-\usepackage{geometry}
-\usepackage{longtable}
-\geometry{a4paper,total={210mm,297mm},left=20mm,right=20mm,top=20mm,bottom=20mm,}
-%Setup hyperref package, and colours for links
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage[colorlinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\hypersetup{
+    colorlinks,
+    % linkcolor={blue!50!black},%{red!50!black},
+    % citecolor={blue!50!black},
+    urlcolor={blue!50!black},%{black!80!black}
+}
+\textheight=670pt
 
-%FONTS
-\defaultfontfeatures{Mapping=tex-text}
-%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-%%% modified for Karol Kozioł for ShareLaTeX use
-\setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
-%%%
-
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.4cm}
-
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
-
-
-%--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-\pagestyle{empty} % non-numbered pages
+\name{\Huge{Supun Nakandala}}
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
-
-%--------------------TITLE-------------
-\par{\centering
-		{\Huge Supun Nakandala}
-		\bigskip
-\par}
+\address{Phone: (+1) 812-558-6888\\ Email: snakanda@eng.ucsd.edu\\ Web: \href{https://scnakandala.github.io}{https://scnakandala.github.io}}
+\address{3232 EBU3B CSE\\9500 Gilman Drive\\La Jolla, CA 92093}
 
 
-\begin{minipage}{0.58\linewidth}
-  Ph.D Student\\
-  \href{https://adalabucsd.github.io/}{Advanced Data Analytics Lab}\\
-  \href{https://cse.ucsd.edu/}{Dept. of Computer Science \& Engineering}\\
-  University of California San Diego\\
-  USA
-\end{minipage}
-\begin{minipage}{0.45\linewidth}
-  \begin{tabular}{ll}
-    Phone: & (+1) 812-558-688 \\
-    Email: & \href{mailto:supun.nakandala@gmail.com}{\tt supun.nakandala@gmail.com} \\
-    Personal Web: & \href{https://scnakandala.github.io}{\tt scnakandala.github.io}\\
-    \\
-  \end{tabular}
-\end{minipage}
-%--------------------SECTIONS-----------------------------------
-%Section: Profile
+\begin{resume}
+\vspace{-2mm}
 \section{Research Interests}
-My research interests are in the area of Advanced Data Analytics which is at the intersection of Machine Learning, Scalable Data Processing Systems and Human Computer Interaction. My current projects involve implementing Deep Learning powered Data Management Systems/Abstractions which can handle analytical queries on dark data types (e.g. images, videos, time series data) along with structured data in a scalable fashion.
+My research interest lies broadly in the intersection of Systems and Machine Learning, an emerging area which is increasingly referred to as \textit{Machine Learning Systems}. In this space I operate as a data management researcher. My Ph.D. thesis work focuses on developing query optimization-inspired abstractions, algorithms, and systems to improve efficiency, scalability, and usability of deep learning workloads.
 
-%Section: Education
+
 \section{Education}
-\begin{tabular}{p{3cm}p{13.5cm}}
+\textbf{University of California}, San Diego \hfill Sept 2017 - (expected) March 2022\\ 
+{\sl PhD}, Computer Science.\\
+Thesis Title: \textit{Multi-Query Optimization for Deep Learning Systems}\\
+\quad Thesis Advisor: Arun Kumar\\
+\quad Committee Members: Arun Kumar (chair), Yannis Papakonstantinou, Geoffrey Voelker, Lawrence Saul, Loki Natarajan\\
+% Courses: Database System Implementation, Advanced Data Analytics Systems, Data Models in Big Data Era, Advanced Compiler Design, Machine Learning, Recommender Systems and Web Mining, Algorithm Design and Analysis, Programming Languages
 
-\emph{Sep 2017 - Present} & Ph.D Student(\textsc{Computer Science \& Engineering}) \href{https://ucsd.edu/}{University of California San Diego}\\
-&\normalsize Member of the \href{https://adalabucsd.github.io/}{Advanced Data Analytics Lab} \& advised by Prof. \href{https://cseweb.ucsd.edu/~arunkk}{Arun Kumar}
-\\\\
-\emph{Jun 2010 - Apr 2015} & BSc.Eng(Hon's) (\textsc{Computer Science \& Engineering}) \href{https://goo.gl/UYmcM7}{University of Moratuwa} - Sri Lanka\\
-&\normalsize Cumulative GPA: 4.11/4.20\\
-&\normalsize Ranked first in a batch of 100 students specializing Computer Science \& Engineering.
-\end{tabular}
+\vspace{-5mm}
+\textbf{University of California}, San Diego \hfill Sept 2017 - June 2020\\
+{\sl MSc}, Computer Science. GPA: 3.97/4.00\\
 
-\section{Selected Publications}
-
-\begin{longtable}{p{3cm}p{13.5cm}}
- & \textbf{Nakandala, S.}, Kumar, A., ``Feature Materialization Trade-offs for Scalable Transfer Learning with Deep ConvNets''. [Under Preparation]
-\\\\
-\emph{May} 2017 & \textbf{Nakandala, S.}, Giovanni, C., Norman, S., Ahn, Y., ``Gendered Conversation in a Social Game-Streaming Platform''. [The 11th International AAAI Conference On Web And Social Media (ICWSM-17)] (pdf: \url{https://goo.gl/FaOlXW}, presentation: \url{https://goo.gl/68eZoS})
-\\\\
-% \emph{Nov} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Marru, S. and Pierce, M. ``Better Data Discoverability in Science Gateways''. In Proceedings of \textit{11'th Gateway Computing Environments Conference 2016 (GCE)}. [Extended Abstract] (pdf: \url{https://goo.gl/YdZmZ6})
-% \\\\
-\emph{Oct} 2016 & \textbf{Nakandala, S.}, Gunasinghe, H., Marru, S., Pierce, M. ``Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework''. In Proceedings of \textit{IEEE 12'th International Conference on eScience 2016}. (pdf: \url{https://goo.gl/5lTtm2})
-\\\\
-\emph{Jul} 2016 & \textbf{Nakandala, S.}, Pamidighantam, S., Yodage, S., Doshi, N., Abeysinghe, E., Kankanamalage, C.P., Marru, S. and Pierce, M. ``Anatomy of the SEAGrid Science Gateway''. In Proceedings of \textit{Extreme Science \& Engineering Discovery Environments Conference on Diversity, Big Data, and Science at Scale 2016 (XSEDE) (p. 40). ACM}. (pdf: \url{https://goo.gl/oytirb})
-% \\\\
-% \emph{Jun} 2016 & Pamidighantam, S., \textbf{Nakandala, S.}, Abeysinghe, E., Wimalasena, C., Rathnayaka, S., Marru, S. and Pierce, M. ``Community Science Exemplars in SEAGrid Science Gateway: Apache Airavata Based Implementation of Advanced Infrastructure''. In Proceedings of \textit{Workshop on Computational Chemistry and Its Applications - International Conference on Computational Science 2016 (ICCS)}. (pdf: \url{https://goo.gl/btjjAK})
-% \\\\
-% \emph{Apr} 2015 & \textbf{Nakandala, S.}, Withana, S.D., Kumarasiri, D., Jayawardena, H., Bandara, H.D., Perera, S., Marru, S. and Pamidighantam, S. ``Schema-independent scientific data cataloging framework''. In Proceedings of \textit{Moratuwa Engineering Research Conference (MerCon) 2015 (pp. 289-294). IEEE}. (pdf: \url{https://goo.gl/tQlsVc})
-% \\\\
-% \emph{Dec} 2014 & \textbf{Nakandala}, S., Withana, S., Kumarasiri, D. and Jayawardena, H., ``A Study on SSD Aware Scan Operation Optmization in PostgreSQL Database''. In Proceedings of \textit{Information Technology Research Unit (ITRU) Symposium 2014 , (pp. 16 - 19), University of Moratuwa Sri Lanka}. (pdf: \url{https://goo.gl/PIzYuU})
-\end{longtable}
+\vspace{-5mm}
+\textbf{University of Moratuwa}, Sri Lanka \hfill Aug 2010 - April 2015\\
+{\sl Bachelor of the Science of Engineering}, Computer Science \& Engineering.\\
+GPA: 4.11/4.20.\\
+\textbf{Department Topper and Gold Medalist}\\
 
 
-%Section: Teaching Experience
-\section{Teaching Experience}
-\begin{tabular}{p{3cm}p{13.5cm}}
 
-\emph{May 2015 - Aug 2015} & Teaching Assistant for Operating Systems Course (CS 2042), CSE-UoM.\\
-&\footnotesize{The objective of this course was to provide fundamental knowledge in Operating Systems to computer science students. My tasks included providing instructions for the labs and grading assignments.}
-\end{tabular}
-
-
-%Section: Internships
+\vspace{-4mm}
 \section{Work Experience}
-\begin{tabular}{p{3cm}p{13.5cm}}
 
-\emph{Oct 2015 - Aug 2017}& Research Software Developer - \href{https://sgrc.iu.edu}{Science Gateways Research Center}, Indiana University\\
-&\footnotesize{Program committee member and core developer in the \href{https://goo.gl/s9Gm3k}{Apache Airavata} project which is a science gateway middleware framework that enables users to compose, manage, execute, and monitor large scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds.}\\\\
+\textbf{Research Intern}
+\hfill June 2021 - Sept 2021 \\
+\textit{Data Management, Exploration, and Mining Group -- Microsoft Research} \\
+Mentor: Vivek Narasayya
 
-\emph{May 2014 - Sep 2014}& Google Summer of Code Intern for Apache Airavata\\
-&\footnotesize{Before this work Airavata did not support security capabilities for communication between Airavata based gateways and the Airavata server. In this project I implemented security capabilities to Airavata thrift services and clients (link: \url{https://goo.gl/4qAS3X}).}\\\\
+\textbf{Software Engineering Intern}
+\hfill June 2020 - Sept 2020 \\
+\textit{Redshift -- Amazon Web Services} \\
+Mentor: Yannis Papakonstantinou\\
+Designed and implemented components of \href{https://aws.amazon.com/redshift/features/redshift-ml/}{Redshift ML}, in-database ML feature of Redshift data warehouse, that went to public preview.
 
-% \emph{Nov 2013 - May 2014} & Trainee Software Engineer - 99XTechnology (Pvt) Ltd.\\&\footnotesize{Worked on implementing an automated UI test suit for an enterprise grade accounting application named “Adrmatch Balancer”. This was done using an automated UI testing framework called SeShell. The test suit covered all the smoke tests. Also worked on an enterprise grade office administration handling application named “Tempus” which has both a desktop client and a web client. My contributions included fixing bugs related to compatibility issues of the web client among various web browsers.}\\\\
+\textbf{Research Intern}
+\hfill June 2019 - Sept 2019 \\
+\textit{Gray Systems Lab -- Microsoft} \\
+Mentors: Matteo Interlandi, Markus Weimer\\
+Designed and implemented \href{https://github.com/microsoft/hummingbird}{Hummingbird} system, a compiler for translating classical machine learning pipelines into tensor computations for unified and faster scoring of machine learning models.
 
-\emph{May 2013 - Sep 2013} & Google Summer of Code Intern for phpMyAdmin 
-\\&\footnotesize{Refactored the SQL executor and column structure manipulation code in phpMyAdmin, which is an opensource web based interface for the MySQL databases (link : \url{https://goo.gl/JNk3vM}).}
-\end{tabular}
-
-
-% %Section: Projects
-% \section{Selected Undergraduate Projects}
-% \begin{tabular}{p{3cm}|p{13.5cm}}
-
-% \emph{May 2014 - April 2015} & Scientific Data Cataloging Framework \href{http://goo.gl/2U1xjw}{\tt http://goo.gl/2U1xjw}\\&Final year research \& development project\\
-% &\footnotesize{The goal of this project is to implement a generic framework for scientific data management in science gateways. This project is integrated to the Apache Airavata project. As the driving usecase for the project we use a computational chemistry data set.}\\ & \footnotesize{Technologies: Java, Solr, Web Services, PHP, HTML, CSS, JavaScript}\\\\
-
-% \emph{May 2014 - Oct 2014} & KDD Cup 2014 (Via Kaggle) \href{http://goo.gl/7GaXDW}{\tt http://goo.gl/7GaXDW}\\& Course: Data Mining \& Information Retrieval\\
-% &\footnotesize{The objective of this project was to help DonorsChoose.org identify projects that are exceptionally exciting to the business, at the time of posting. We used machine learning techniques such as regression, decision trees, and ensemble methods to predict projects that will be exciting. This was done as Kaggle Competition and our team was able to obtain the 61 place out of 472 teams all over the world.}\\ & \footnotesize{Technologies: Python, NumPy, SimPy}\\\\
-
-% \end{tabular}
+\textbf{Research Software Developer}
+\hfill Oct 2015 - Aug 2017 \\
+\textit{Science Gateways Research Center, Indiana University} \\
+Manager: Marlon Pierce\\
+Contributed to the development of \href{https://airavata.apache.org/index.html}{Apache Airavata} system, which is a software framework to compose, manage, execute, and monitor computational applications and workflows on distributed computing resources such as local clusters, computational grids, and computing clouds.
 
 
-%Section: Scholarships and additional info
-\section{Awards \& Recognitions}
-\begin{tabular}{p{3cm}p{13.5cm}}
-\emph{Aug 2015} & \href{https://goo.gl/Q3SrQX}{IBM Gold Medal} for the Best Academic Performance in Computer Science \& Engineering - University of Moratuwa.\\\\
-\emph{May 2014} & Scholarship to attend \href{https://goo.gl/lDpCe5}{4\textsuperscript{th} South Asia Workshop} (2014) on Research Frontiers in Computing - NUS School of Computing\\\\
-\emph{Aug 2010 - Apr 2015} & \href{http://www.gic.gov.lk/gic/index.php?option=com_info&id=1644&task=info&lang=en}{Mahapola Higher Education Merit Scholarship} for Undergraduate Studies - Government of Sri Lanka.\\\\
-\emph{Nov 2009} & Award for the Most Outstanding Student - De Mazenod College (High School).\\\\
-\emph{Mar 2009} & President’s Scout (Eagle Scout Equivalent) - Sri Lanka Scout Association.\\
-\end{tabular}\\
+\section{Teaching Experience}
+Teaching Assistant - Systems for Scalable Analytics \hfill UCSD - Winter 2020\\
+Teaching Assistant - Advanced Data Analytics Systems \hfill UCSD - Spring 2019
 
-%Section: Leadership and Extra Curricular Activities
-\section{Extra Curricular Activities}
-\begin{tabular}{p{3cm}p{13.5cm}}
-\emph{2014} & Membership Co-Chair, ACM Student Chapter - University of Moratuwa.\\\\
 
-\emph{2011} & Editor, Sri Lanka University Catholic Students Movement.\\\\
-\emph{2008} & Head Prefect, De Mazenod College (High School).\\\\
-\end{tabular}
+\section{Conference Publications}
+\par
+\textit{Cerebro: A Layered Data Platform for Scalable Deep Learning} \\
+Arun Kumar, \textbf{Supun Nakandala}, Yuhao Zhang,  Side Li, Advitya Gemawat, and Kabir
+Nagrecha\\
+CIDR 2021 (Vision paper)
 
-% %References
+\par
+\textit{Cerebro: A Data System for Optimized Deep Learning Model Selection} \\
+\textbf{Supun Nakandala}, Yuhao Zhang, and Arun Kumar\\
+VLDB 2020
+
+\par
+\textit{A Tensor Compiler for Unified Machine Learning Prediction Serving} \\
+\textbf{Supun Nakandala}, Karla Saur, Gyeong-In Yu, Konstantinos Karanasos, Carlo Curino, Markus Weimer, and Matteo Interlandi\\
+OSDI 2020
+
+\par
+\textit{Vista: Declarative Feature Transfer from Deep CNNs at Scale} \\
+\textbf{Supun Nakandala} and Arun Kumar\\
+SIGMOD 2020
+
+\par
+\textit{Extending Relational Query Processing with ML Inference} \\
+Konstantinos Karanasos, Matteo Interlandi, Doris Xin, Fotis Psallidas, Rathijit Sen, Kwanghyun Park, Ivan Popivanov, \textbf{Supun Nakandala}, Subru Krishnan, Markus Weimer, Yuan Yu, Raghu Ramakrishnan, Carlo Curino\\
+CIDR 2020
+
+\par
+\textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations} \\
+\textbf{Supun Nakandala}, Arun Kumar, and Yannis Papakonstantinou \\
+SIGMOD 2019 \\
+\textbf{Honorable Mention for Best Paper Award\\ Invited to TODS 2020\\ Invited to SIGMOD Research Highlight 2020}
+
+\par
+\textit{Gendered Conversation in a Social Game-Streaming Platform} \\
+\textbf{Supun Nakandala}, Giovani Cimpaglia, Norma Su, and Yong-Yeol Ahn \\
+AAAI ICWSM 2017
+
+\par
+\textit{Apache Airavata Security Manager: Authentication and Authorization Implementations for a Multi-Tenant eScience Framework
+} \\
+\textbf{Supun Nakandala}, Hasini Gunasinghe, Suresh Marru, and Marlon Pierce\\
+IEEE e-Science 2016
+
+\section{Journal Publications}
+\par
+\textit{Deep Learning Algorithms for Identifying Sedentary Behavior from Hip Worn Accelerometer Data} \\
+\textbf{Supun Nakandala}, Marta Jankowaska, Fatima Tuz-Zahra, John Bellettiere, Arun Kumar, and Loki Natarajan\\
+Journal for the Measurement of Physical Behavior, 2021
+
+\par
+\textit{Query Optimization for Faster Deep CNN Explanations} \\
+\textbf{Supun Nakandala}, Arun Kumar, and Yannis Papakonstantinou\\
+SIGMOD Record 2020 \textbf{(SIGMOD Research Highlight Award)}
+
+\par
+\textit{Incremental and Approximate Computations for Accelerating Deep CNN Inference} \\
+\textbf{Supun Nakandala}, Kabir Nagrecha, Arun Kumar, and Yannis Papakonstantinou\\
+TODS 2020 \textbf{(Invited Paper)}
+
+
+\section{Workshop and Demo Publications}
+\par
+Compiling Classical ML Pipelines into Tensor Computations for One-size-fits-all Prediction Serving \\
+\textbf{Supun Nakandala}, Gyeong-In Yu, Matteo Interlandi, and Markus Weimer\\
+NeurIPS 2019 MLSys Workshop
+
+\par
+\textit{Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems} \\
+\textbf{Supun Nakandala}, Yuhao Zhang, and Arun Kumar\\
+SIGMOD 2019 DEEM Workshop
+
+\par
+\textit{Demonstration of Krypton: Optimized CNN Inference for Occlusion-based Deep CNN Explanations} \\
+Allen Ordookhanians, Xin Li, \textbf{Supun Nakandala}, and Arun Kumar\\
+VLDB 2019 Demo $|$ MLSys 2019 Demo
+
+\par
+\textit{Materialization Trade-offs for Feature Transfer from Deep CNNs for Multimodal Data Analytics} \\
+\textbf{Supun Nakandala}, Arun Kumar\\
+MLSys 2018 Short paper
+
+\par
+\textit{Anatomy of the SEAGrid Science Gateway} \\
+\textbf{Supun Nakandala}, Sudhakar Pamidigantam, Suresh Marru, Marlon Pierce\\
+NSF XSEDE 2016
+
+
+\vspace{2mm}
+\section{Pre-Prints}
+\par
+\textit{Nautilus: An Optimized System Deep Learning-based Active Transfer Learning} \\
+\textbf{Supun Nakandala} and Arun Kumar\\
+Under Preparation
+
+\par
+\textit{The CNN Hip Accelerometer Posture (CHAP) Method for Classifying Sitting Patterns from Hip Accelerometers: A Validation Study in Older Adults} \\
+Mikael Anne$^*$, \textbf{Supun Nakandala}$^*$, Marta M. Jankowska, Dori Rosenberg, Fatima Tuz-Zahra, John Bellettiere, Jordan Carlson, Paul R. Hibbing, Jingjing Zou, Andrea Z. LaCroix, Arun Kumar, and Loki Natarajan\\
+Under Submission
+($^*$ Co-First Author)
+
+
+\section{Research Impact}
+Microsoft open-sourced \href{https://github.com/microsoft/hummingbird}{Hummingbird} system and uses it in ONNX ML Tools\hfill 2020\\
+Ideas from project \textsc{Cerebro} integrated into \href{https://tanzu.vmware.com/content/blog/model-selection-for-deep-neural-networks-on-greenplum-database}{MADlib/Greenplum} by VMWare\hfill 2019\\
+\textsc{Cerebro} system is being used by behavioral science researchers at UCSD \hfill 2019\\
+\textit{``Gendered Conversation in a Social Game-Streaming Platform''} paper gains lot of \href{https://docs.google.com/document/d/12zybT3kJb1JaW3c8oSx3hdH4g21MlkHA56C5_mkY_6I/edit?usp=sharing}{media attention} and creates awareness about the bleak issue of sexism in online game streaming platforms \hfill 2017\\
+\textsc{Apache Airavata} science gateways middleware and the \textsc{SEAGrid} science gateway are \href{https://seagrid.org/publications/}{widely used} by computational science researchers to execute and manage computational jobs on university clusters and national supercomputing infrastructure \hfill 2017
+
+
+\section{Patents}
+\par
+Pending US Patent Application: \textit{Query Optimization for Deep Convolutional Neural Network Inferences}\\
+Arun Kumar and Supun Nakandala
+
+\par
+Pending US Patent Application: \textit{Accelerating Inference of Traditional ML Pipelines with Neural Network Frameworks}\\
+Matteo Interlandi, Markus Weimer, Saeed Amizadeh, Konstantinos Karanasos,
+Supun Nakandala, Karla J. Saur, Carlo Aldo Curino and Gyeongin Yu
+
+
+\vspace{4mm}
+\section{Service}
+\textbf{Program Committee:}\\
+VLDB: 2022
+
+\textbf{External Reviewer:}\\
+VLDB: 2019
+
+
+\vspace{4mm}
+\section{Scholarships and Awards}
+Student grant to attend OSDI 2020 \hfill USENIX - 2020\\
+NSF travel award to attend SIGMOD 2019 \hfill NSF - 2019\\
+Gold Medal for the Best Academic Performance \hfill University of Moratuwa - 2015\\
+Travel award to attend South Asia Workshop on Research\\ Frontiers in Computing~\hfill National University of Singapore - 2014\\
+Mahapola Higher Education Merit Scholarship \hfill Govt. of Sri Lanka - 2010
+
+
+\section{Technical Talks}
+\textit{Cerebro: A Data System for Optimized Deep Learning Model Selection}\\ VLDB 2020; UCSD CNS Research Review 2020; SIGMOD 2019\\\\
+% \\
+\textit{Vista: Optimized System for Declarative Feature Transfer from Deep CNNs at Scale}\\ SIGMOD 2020; UCSD CNS Research Review 2018\\\\
+% \\
+\textit{Incremental and Approximate Inference for Faster Occlusion-based Deep CNN Explanations}\\ SIGMOD 2019\\\\
+% \\
+\textit{A Tensor Compiler for Unified Machine Learning Prediction Serving}\\ OSDI 2020; Microsoft Gray Systems Lab 2019; Google Brain ML+Compiler Reading Group 2021 (Invited)\\
+% \\
+
+%-------------------------------------------------------------------------------
 % \section{References}
-% \begin{minipage}{0.58\linewidth}
-%   %\textbf{Dr. Dilum Bandara}\\
-%   %Senior Lecturer\\
-%   %Dept. of Computer Science \& Engineering\\
-%   %Faculty of Engineering\\
-%   %University of Moratuwa\\
-%   %Sri Lanka\\
-%   %\href{mailto:dilumb@cse.mrt.ac.lk}{\tt dilumb@cse.mrt.ac.lk}
-%   \textbf{Dr. Marlon Pierce}\\
-%   Manager\\
-%   Science Gateways Group\\
-%   Research Technologies\\
-%   Indiana University\\
-%   USA\\
-%   \href{mailto:mpierce@iu.edu}{\tt mpierce@iu.edu}
-% \end{minipage}
-% \begin{minipage}{0.58\linewidth}
-%   \textbf{Dr. Dilum Bandara}\\
-%   Senior Lecturer\\
-%   Dept. of Computer Science \& Engineering\\
-%   Faculty of Engineering\\
-%   University of Moratuwa\\
-%   Sri Lanka\\
-%   \href{mailto:dilumb@cse.mrt.ac.lk}{\tt dilumb@cse.mrt.ac.lk}
-%   %\textbf{Dr. Chathura De Silva}\\
-%   %Head of the Department\\
-%   %Department of Computer Science \& Engineering\\
-%   %University of Moratuwa\\
-%   %Moratuwa\\
-%   %Sri Lanka\\
-%   %\href{mailto:chathura@cse.mrt.ac.lk}{\tt chathura@cse.mrt.ac.lk}
-% \end{minipage}
-% %\begin{minipage}{0.58\linewidth}
-% %  \textbf{Suresh Marru}\\
-% %  Principal Software Architect\\
-% % Science Gateways Group\\
-% %  Indiana University\\
-% %  Bloomington\\
-% %  USA\\
-% %  \href{mailto:smarru@iu.edu}{\tt smarru@iu.edu}
-% %\end{minipage}
+% Arun Kumar \\
+% Assistant Professor, University of California, San Diego \\
+% arunkk@eng.ucsd.edu
 
+% Yong-Yeol Ahn \\
+% Associate Professor, Indiana University Bloomington \\
+% yyahn@iu.edu 
+
+% Marlon Pierce \\
+% Director - Science Gateways Research Center, Indiana University Bloomington \\
+% marpierc@iu.edu
+\end{resume}
 \end{document}

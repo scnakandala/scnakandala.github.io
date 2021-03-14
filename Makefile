@@ -1,8 +1,8 @@
 all: build clean
 
 build:
-	pdflatex supun_cv_new.tex
-	pdflatex supun_cv_new.tex
+	pdflatex supun_cv.tex
+	pdflatex supun_cv.tex
 
 clean:
-	rm -f supun_cv_new.aux supun_cv_new.fdb_latexmk supun_cv_new.fls supun_cv_new.log
+	rm -f supun_cv.aux supun_cv.fdb_latexmk supun_cv.fls supun_cv.log
